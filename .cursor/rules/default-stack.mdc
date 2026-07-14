@@ -1,0 +1,15 @@
+---
+description: Default free-first stack for all new shippable apps
+alwaysApply: true
+---
+
+# Default stack
+
+When creating or continuing product apps for this user:
+
+- Start from template repo `Kopher15/app-starter` (or this repo), not a random scaffold.
+- Stack: Next.js App Router + TypeScript + Tailwind + shadcn/ui + Auth.js (Google) + Drizzle/Neon + Vercel.
+- Do not introduce Clerk, Prisma, or paid-only auth/DB unless the user explicitly asks.
+- Never commit secrets; use `.env.local` / Vercel env vars.
+- Ask before `vercel --prod` or destructive database operations.
+- Prefer debuggable, boring patterns over clever abstractions.
