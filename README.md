@@ -4,7 +4,20 @@ Free-first, debuggable default stack for shipping apps on Vercel.
 
 **Stack:** Next.js (App Router) · TypeScript · Tailwind · shadcn/ui · Auth.js · Drizzle · Neon · Vercel
 
-## Quick start
+## Use as template
+
+This repo is a **GitHub template**: https://github.com/Kopher15/app-starter
+
+```bash
+# New app from template
+gh repo create my-new-app --template Kopher15/app-starter --public --clone
+cd my-new-app
+npm install
+cp .env.example .env.local
+npm run dev
+```
+
+## Quick start (this repo)
 
 ```bash
 npm install
