@@ -1,4 +1,3 @@
-import { randomBytes } from "node:crypto";
 import NextAuth from "next-auth";
 import Google from "next-auth/providers/google";
 import { isAuthConfigured } from "@/lib/env";
@@ -6,7 +5,7 @@ import { isAuthConfigured } from "@/lib/env";
 const providers = [];
 const developmentSecret =
   process.env.NODE_ENV === "development"
-    ? randomBytes(32).toString("base64url")
+    ? crypto.randomUUID()
     : undefined;
 
 if (isAuthConfigured()) {
