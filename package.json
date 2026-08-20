@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "db:push": "drizzle-kit push",
-    "db:studio": "drizzle-kit studio"
+    "test": "node --test",
+    "db:push": "node --import ./scripts/load-drizzle-env.mjs ./node_modules/drizzle-kit/bin.cjs push",
+    "db:studio": "node --import ./scripts/load-drizzle-env.mjs ./node_modules/drizzle-kit/bin.cjs studio"
   },
   "dependencies": {
     "@auth/drizzle-adapter": "^1.11.2",
